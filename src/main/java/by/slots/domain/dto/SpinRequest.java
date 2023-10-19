@@ -7,8 +7,8 @@ import lombok.Data;
 @Data
 public class SpinRequest {
 
-    @Min(value = 25)
-    @Max(value = 1000)
+//    @Min(value = 25)
+//    @Max(value = 1000)
     private int stake;
 
 }

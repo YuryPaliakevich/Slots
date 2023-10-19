@@ -1,11 +1,11 @@
-package by.slots.domain.dto;
+package by.slots.domain.spin;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class SpinResponse {
+public class SpinResult {
 
     private int[][] resultCombination;
     private int[][] winningPlaces;
