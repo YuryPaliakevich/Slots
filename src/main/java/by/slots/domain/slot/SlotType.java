@@ -1,16 +1,20 @@
 package by.slots.domain.slot;
 
-import lombok.Getter;
-
-@Getter
 public enum SlotType {
 
-    CHERRY(0), LEMON(1), ORANGE(2), PLUM(3), BANANA(4), MELON(5), WATERMELON(6);
+    CHERRY, LEMON, ORANGE, PLUM, BANANA, MELON, WATERMELON;
 
-    private final int id;
-
-    SlotType(int id) {
-        this.id = id;
+    public static SlotType fromNumber(int number) {
+        return switch (number) {
+            case 0 -> SlotType.CHERRY;
+            case 1 -> SlotType.LEMON;
+            case 2 -> SlotType.ORANGE;
+            case 3 -> SlotType.PLUM;
+            case 4 -> SlotType.BANANA;
+            case 5 -> SlotType.MELON;
+            case 6 -> SlotType.WATERMELON;
+            default -> null;
+        };
     }
 
 }
