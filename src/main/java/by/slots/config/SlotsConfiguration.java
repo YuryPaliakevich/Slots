@@ -14,10 +14,13 @@ import by.slots.domain.slot.SlotsCompleteOverview;
 
 // TODO: Move to yml config file
 @Configuration
-public class SlotTypeConfiguration {
-
+public class SlotsConfiguration {
 
     public static final int SLOT_TYPE_AMOUNT = 7;
+
+    public static final int SLOTS_MATRIX_ROW_SIZE = 5;
+
+    public static final int SLOTS_MATRIX_COLUMN_SIZE = 6;
 
     @Bean
     public SlotsCompleteOverview slotsCompleteOverview() {
