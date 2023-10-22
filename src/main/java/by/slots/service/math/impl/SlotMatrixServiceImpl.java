@@ -3,6 +3,7 @@ package by.slots.service.math.impl;
 import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_COLUMN_SIZE;
 import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_ROW_SIZE;
 
+import java.util.Arrays;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class SlotMatrixServiceImpl implements SlotMatrixService {
     @Autowired
     private SlotMatrixAnalyzerService analyzerService;
 
-    private int [][] currentState = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+    private volatile int[][] currentState = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
 
     @Override
     public SlotMatrixGenerationResult generate() {
@@ -39,16 +40,10 @@ public class SlotMatrixServiceImpl implements SlotMatrixService {
     }
 
 
-    // TODO: replace by stream API
     private boolean matrixContainsWinningCombination(int[][] previousWinningMatrix) {
-        for (int[] winningMatrix : previousWinningMatrix) {
-            for (int matrix : winningMatrix) {
-                if (matrix == 1) {
-                    return true;
-                }
-            }
-        }
-        return false;
+        return Arrays.stream(previousWinningMatrix)
+                .flatMap(array -> Arrays.stream(array).boxed())
+                .anyMatch(value -> value == 1);
     }
 
     private void updateExistingMatrix(int[][] previousWinningMatrix) {

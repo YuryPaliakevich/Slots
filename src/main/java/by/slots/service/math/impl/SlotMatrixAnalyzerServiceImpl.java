@@ -32,7 +32,7 @@ public class SlotMatrixAnalyzerServiceImpl implements SlotMatrixAnalyzerService 
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                final SlotType type = idToSlotType(matrix[i][j]);
+                final SlotType type = SlotType.fromNumber(matrix[i][j]);
                 if (!slotPositioning.containsKey(type)) {
                     slotPositioning.put(type, new ArrayList<>());
                 }
@@ -56,19 +56,6 @@ public class SlotMatrixAnalyzerServiceImpl implements SlotMatrixAnalyzerService 
     @Override
     public int[][] getCurrentWinningState() {
         return winningMatrix;
-    }
-
-    private SlotType idToSlotType(int value) {
-        return switch (value) {
-            case 0 -> SlotType.CHERRY;
-            case 1 -> SlotType.LEMON;
-            case 2 -> SlotType.ORANGE;
-            case 3 -> SlotType.PLUM;
-            case 4 -> SlotType.BANANA;
-            case 5 -> SlotType.MELON;
-            case 6 -> SlotType.WATERMELON;
-            default -> null;
-        };
     }
 
 }
