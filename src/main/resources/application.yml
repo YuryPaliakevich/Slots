@@ -1,1 +1,243 @@
+slots:
+  reels:
+    - stops:
+        - stop: CHERRY
+        - stop: LEMON
+        - stop: ORANGE
+        - stop: PLUM
+        - stop: BANANA
+        - stop: MELON
+        - stop: WATERMELON
+    - stops:
+        - stop: CHERRY
+        - stop: LEMON
+        - stop: ORANGE
+        - stop: PLUM
+        - stop: BANANA
+        - stop: MELON
+        - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: PLUM
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: PLUM
+          - stop: WATERMELON
+    - stops:
+          - stop: PLUM
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
+    - stops:
+          - stop: CHERRY
+          - stop: LEMON
+          - stop: ORANGE
+          - stop: PLUM
+          - stop: BANANA
+          - stop: MELON
+          - stop: WATERMELON
 

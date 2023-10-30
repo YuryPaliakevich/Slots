@@ -7,8 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class SpinResponse {
 
-    private int[][] resultCombination;
-    private int[][] winningPlaces;
+    private int[] resultCombination;
+    private int[] winningPlaces;
     private double winAmount;
 
 }

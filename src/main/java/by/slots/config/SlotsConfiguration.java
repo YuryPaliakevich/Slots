@@ -3,6 +3,8 @@ package by.slots.config;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,13 +16,13 @@ import by.slots.domain.slot.SlotsCompleteOverview;
 
 // TODO: Move to yml config file
 @Configuration
+@EnableConfigurationProperties
+@ConfigurationPropertiesScan(basePackages = "by.slots.config.properties")
 public class SlotsConfiguration {
 
     public static final int SLOT_TYPE_AMOUNT = 7;
 
-    public static final int SLOTS_MATRIX_ROW_SIZE = 5;
-
-    public static final int SLOTS_MATRIX_COLUMN_SIZE = 6;
+    public static final int REELS_AMOUNT = 30;
 
     @Bean
     public SlotsCompleteOverview slotsCompleteOverview() {

@@ -8,6 +8,5 @@ import lombok.Data;
 public class SlotPosition {
 
     private int i;
-    private int j;
 
 }

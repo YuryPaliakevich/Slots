@@ -7,6 +7,6 @@ import lombok.Getter;
 @AllArgsConstructor
 public class SlotMatrixGenerationResult {
 
-    private int[][] matrix;
+    private int[] matrix;
 
 }

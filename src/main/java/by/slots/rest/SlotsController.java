@@ -13,7 +13,7 @@ import by.slots.service.slots.SpinMapperService;
 import by.slots.service.slots.SpinService;
 import jakarta.validation.Valid;
 
-@RestController("/slots")
+@RestController(value = "/slots")
 public class SlotsController {
 
     @Autowired

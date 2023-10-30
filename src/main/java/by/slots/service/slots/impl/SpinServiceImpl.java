@@ -3,7 +3,7 @@ package by.slots.service.slots.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import by.slots.domain.math.SlotMatrixAnalyzerResult;
+import by.slots.domain.math.SlotAnalyzerResult;
 import by.slots.domain.math.SlotMatrixGenerationResult;
 import by.slots.domain.spin.SpinResult;
 import by.slots.service.math.SlotMatrixAnalyzerService;
@@ -22,7 +22,7 @@ public class SpinServiceImpl implements SpinService {
     @Override
     public SpinResult spin(int stake) {
         final SlotMatrixGenerationResult matrix = slotMatrixService.generate();
-        final SlotMatrixAnalyzerResult analyzerResult = slotMatrixAnalyzerService.analyzeWinningCombinations(matrix.getMatrix());
+        final SlotAnalyzerResult analyzerResult = slotMatrixAnalyzerService.analyzeWinningCombinations(matrix.getMatrix());
         return new SpinResult(matrix.getMatrix(), analyzerResult.getWinningCombination(), analyzerResult.getWiningAmount());
     }
 }
