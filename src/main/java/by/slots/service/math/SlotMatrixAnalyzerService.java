@@ -1,11 +1,11 @@
 package by.slots.service.math;
 
-import by.slots.domain.math.SlotMatrixAnalyzerResult;
+import by.slots.domain.math.SlotAnalyzerResult;
 
 public interface SlotMatrixAnalyzerService {
 
-    SlotMatrixAnalyzerResult analyzeWinningCombinations(int[][] matrix);
+    SlotAnalyzerResult analyzeWinningCombinations(int[] matrix);
 
-    int[][] getCurrentWinningState();
+    int[] getCurrentWinningState();
 
 }

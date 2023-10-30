@@ -1,17 +1,17 @@
 package by.slots.service.math.impl;
 
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_COLUMN_SIZE;
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_ROW_SIZE;
+import static by.slots.config.SlotsConfiguration.REELS_AMOUNT;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.IntStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import by.slots.domain.math.SlotMatrixAnalyzerResult;
+import by.slots.domain.math.SlotAnalyzerResult;
 import by.slots.domain.slot.SlotPosition;
 import by.slots.domain.slot.SlotType;
 import by.slots.service.math.SlotMatrixAnalyzerService;
@@ -23,38 +23,36 @@ public class SlotMatrixAnalyzerServiceImpl implements SlotMatrixAnalyzerService 
     @Autowired
     private WinningCombinationService winningCombinationService;
 
-    private int[][] winningMatrix = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+    private int[] winningMatrix = new int[REELS_AMOUNT];
 
     @Override
-    public SlotMatrixAnalyzerResult analyzeWinningCombinations(int [][] matrix) {
+    public SlotAnalyzerResult analyzeWinningCombinations(int [] matrix) {
         final Map<SlotType, List<SlotPosition>> slotPositioning = new HashMap<>();
-        winningMatrix = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+        winningMatrix = new int[REELS_AMOUNT];
 
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                final SlotType type = SlotType.fromNumber(matrix[i][j]);
-                if (!slotPositioning.containsKey(type)) {
-                    slotPositioning.put(type, new ArrayList<>());
-                }
-                slotPositioning.get(type).add(new SlotPosition(i, j));
+        IntStream.range(0, matrix.length).forEach(i -> {
+            final SlotType type = SlotType.fromNumber(matrix[i]);
+            if (!slotPositioning.containsKey(type)) {
+                slotPositioning.put(type, new ArrayList<>());
             }
-        }
+            slotPositioning.get(type).add(new SlotPosition(i));
+        });
 
         double totalWin = 0;
 
         for (Map.Entry<SlotType, List<SlotPosition>> entry : slotPositioning.entrySet()) {
             final Double winningAmount = winningCombinationService.getWinningAmount(entry.getKey(), entry.getValue().size());
             if (winningAmount > 0) {
-                entry.getValue().forEach(slotPosition -> winningMatrix[slotPosition.getI()][slotPosition.getJ()] = 1);
+                entry.getValue().forEach(slotPosition -> winningMatrix[slotPosition.getI()] = 1);
             }
             totalWin += winningAmount;
         }
 
-        return new SlotMatrixAnalyzerResult(winningMatrix, totalWin);
+        return new SlotAnalyzerResult(winningMatrix, totalWin);
     }
 
     @Override
-    public int[][] getCurrentWinningState() {
+    public int[] getCurrentWinningState() {
         return winningMatrix;
     }
 

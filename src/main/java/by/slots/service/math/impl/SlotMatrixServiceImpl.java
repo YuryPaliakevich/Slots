@@ -1,10 +1,10 @@
 package by.slots.service.math.impl;
 
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_COLUMN_SIZE;
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_ROW_SIZE;
+import static by.slots.config.SlotsConfiguration.REELS_AMOUNT;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.stream.IntStream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,16 +20,16 @@ public class SlotMatrixServiceImpl implements SlotMatrixService {
     @Autowired
     private SlotMatrixAnalyzerService analyzerService;
 
-    private volatile int[][] currentState = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+    private volatile int[] currentState = new int[REELS_AMOUNT];
 
     @Override
     public SlotMatrixGenerationResult generate() {
-        final int[][] previousWinningMatrix = analyzerService.getCurrentWinningState();
+        final int[] previousWinningMatrix = analyzerService.getCurrentWinningState();
         generateMatrix(previousWinningMatrix);
         return new SlotMatrixGenerationResult(currentState);
     }
 
-    private void generateMatrix(int[][] previousWinningMatrix) {
+    private void generateMatrix(int[] previousWinningMatrix) {
 
         // Check if there was some winning combination to replace only these values
         if (matrixContainsWinningCombination(previousWinningMatrix)) {
@@ -39,35 +39,23 @@ public class SlotMatrixServiceImpl implements SlotMatrixService {
         }
     }
 
-
-    private boolean matrixContainsWinningCombination(int[][] previousWinningMatrix) {
-        return Arrays.stream(previousWinningMatrix)
-                .flatMap(array -> Arrays.stream(array).boxed())
-                .anyMatch(value -> value == 1);
+    private boolean matrixContainsWinningCombination(int[] previousWinningMatrix) {
+        return Arrays.stream(previousWinningMatrix).anyMatch(value -> value == 1);
     }
 
-    private void updateExistingMatrix(int[][] previousWinningMatrix) {
-        for (int i = 0; i < previousWinningMatrix.length; i++) {
-            for (int j = 0; j < previousWinningMatrix[i].length; j++) {
-                if (previousWinningMatrix[i][j] == 1) {
-                    this.currentState[i][j] = generateRandom();
-                }
-            }
-        }
+    private void updateExistingMatrix(int[] previousWinningMatrix) {
+        IntStream.range(0, previousWinningMatrix.length)
+                .filter(i -> previousWinningMatrix[i] == 1)
+                .forEach(i -> this.currentState[i] = generateRandomIndex());
     }
 
-    private int[][] generateNewMatrix() {
-        int[][] matrix = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = generateRandom();
-            }
-        }
-
+    private int[] generateNewMatrix() {
+        int[] matrix = new int[REELS_AMOUNT];
+        IntStream.range(0, matrix.length).forEach(i -> matrix[i] = generateRandomIndex());
         return matrix;
     }
 
-    private int generateRandom() {
+    private int generateRandomIndex() {
         return new Random().nextInt(SlotsConfiguration.SLOT_TYPE_AMOUNT);
     }
 }
