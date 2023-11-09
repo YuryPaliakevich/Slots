@@ -1,7 +1,7 @@
 package by.slots.service.math.impl;
 
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_COLUMN_SIZE;
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_ROW_SIZE;
+import static by.slots.config.SlotsConfiguration.SLOTS_REELS_AMOUNT;
+import static by.slots.config.SlotsConfiguration.SLOTS_ROW_SIZE;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,12 +23,12 @@ public class SlotMatrixAnalyzerServiceImpl implements SlotMatrixAnalyzerService 
     @Autowired
     private WinningCombinationService winningCombinationService;
 
-    private int[][] winningMatrix = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+    private int[][] winningMatrix = new int[SLOTS_ROW_SIZE][SLOTS_REELS_AMOUNT];
 
     @Override
     public SlotMatrixAnalyzerResult analyzeWinningCombinations(int [][] matrix) {
         final Map<SlotType, List<SlotPosition>> slotPositioning = new HashMap<>();
-        winningMatrix = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+        winningMatrix = new int[SLOTS_ROW_SIZE][SLOTS_REELS_AMOUNT];
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {

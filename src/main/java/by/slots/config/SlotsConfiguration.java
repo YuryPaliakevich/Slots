@@ -3,6 +3,8 @@ package by.slots.config;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,13 +16,15 @@ import by.slots.domain.slot.SlotsCompleteOverview;
 
 // TODO: Move to yml config file
 @Configuration
+@EnableConfigurationProperties
+@ConfigurationPropertiesScan(basePackages = "by.slots.config.properties")
 public class SlotsConfiguration {
 
     public static final int SLOT_TYPE_AMOUNT = 7;
 
-    public static final int SLOTS_MATRIX_ROW_SIZE = 5;
+    public static final int SLOTS_ROW_SIZE = 5;
 
-    public static final int SLOTS_MATRIX_COLUMN_SIZE = 6;
+    public static final int SLOTS_REELS_AMOUNT = 5;
 
     @Bean
     public SlotsCompleteOverview slotsCompleteOverview() {
@@ -40,7 +44,7 @@ public class SlotsConfiguration {
 
     private SlotDescription createCherryDescription() {
         final List<SlotWinningValue> winningValues = new ArrayList<>();
-        winningValues.add(new SlotWinningValue(12, 30, 200));
+        winningValues.add(new SlotWinningValue(12, 25, 200));
         winningValues.add(new SlotWinningValue(10, 11, 100));
         winningValues.add(new SlotWinningValue(8, 9, 40));
         winningValues.add(new SlotWinningValue(0, 7, 0));
@@ -53,7 +57,7 @@ public class SlotsConfiguration {
 
     private SlotDescription createWatermelonDescription() {
         final List<SlotWinningValue> winningValues = new ArrayList<>();
-        winningValues.add(new SlotWinningValue(12, 30, 100));
+        winningValues.add(new SlotWinningValue(12, 25, 100));
         winningValues.add(new SlotWinningValue(10, 11, 40));
         winningValues.add(new SlotWinningValue(8, 9, 10));
         winningValues.add(new SlotWinningValue(0, 7, 0));
@@ -66,7 +70,7 @@ public class SlotsConfiguration {
 
     private SlotDescription createMelonDescription() {
         final List<SlotWinningValue> winningValues = new ArrayList<>();
-        winningValues.add(new SlotWinningValue(12, 30, 60));
+        winningValues.add(new SlotWinningValue(12, 25, 60));
         winningValues.add(new SlotWinningValue(10, 11, 20));
         winningValues.add(new SlotWinningValue(8, 9, 8));
         winningValues.add(new SlotWinningValue(0, 7, 0));
@@ -79,7 +83,7 @@ public class SlotsConfiguration {
 
     private SlotDescription createBananaDescription() {
         final List<SlotWinningValue> winningValues = new ArrayList<>();
-        winningValues.add(new SlotWinningValue(12, 30, 48));
+        winningValues.add(new SlotWinningValue(12, 25, 48));
         winningValues.add(new SlotWinningValue(10, 11, 8));
         winningValues.add(new SlotWinningValue(8, 9, 6));
         winningValues.add(new SlotWinningValue(0, 7, 0));
@@ -92,7 +96,7 @@ public class SlotsConfiguration {
 
     private SlotDescription createPlumDescription() {
         final List<SlotWinningValue> winningValues = new ArrayList<>();
-        winningValues.add(new SlotWinningValue(12, 30, 40));
+        winningValues.add(new SlotWinningValue(12, 25, 40));
         winningValues.add(new SlotWinningValue(10, 11, 6));
         winningValues.add(new SlotWinningValue(8, 9, 4));
         winningValues.add(new SlotWinningValue(0, 7, 0));
@@ -105,7 +109,7 @@ public class SlotsConfiguration {
 
     private SlotDescription createOrangeDescription() {
         final List<SlotWinningValue> winningValues = new ArrayList<>();
-        winningValues.add(new SlotWinningValue(12, 30, 32));
+        winningValues.add(new SlotWinningValue(12, 25, 32));
         winningValues.add(new SlotWinningValue(10, 11, 4.80));
         winningValues.add(new SlotWinningValue(8, 9, 3.20));
         winningValues.add(new SlotWinningValue(0, 7, 0));
@@ -118,7 +122,7 @@ public class SlotsConfiguration {
 
     private SlotDescription createLemonDescription() {
         final List<SlotWinningValue> winningValues = new ArrayList<>();
-        winningValues.add(new SlotWinningValue(12, 30, 20));
+        winningValues.add(new SlotWinningValue(12, 25, 20));
         winningValues.add(new SlotWinningValue(10, 11, 4));
         winningValues.add(new SlotWinningValue(8, 9, 2));
         winningValues.add(new SlotWinningValue(0, 7, 0));

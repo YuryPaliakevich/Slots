@@ -1,1 +1,77 @@
-
+slots:
+  reels:
+    - distribution:
+        - amount-of-stops: 100
+          type: LEMON
+        - amount-of-stops: 90
+          type: ORANGE
+        - amount-of-stops: 80
+          type: PLUM
+        - amount-of-stops: 70
+          type: BANANA
+        - amount-of-stops: 60
+          type: MELON
+        - amount-of-stops: 50
+          type: WATERMELON
+        - amount-of-stops: 30
+          type: CHERRY
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY

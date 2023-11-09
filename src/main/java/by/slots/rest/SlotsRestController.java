@@ -14,7 +14,7 @@ import by.slots.service.slots.SpinService;
 import jakarta.validation.Valid;
 
 @RestController("/slots")
-public class SlotsController {
+public class SlotsRestController {
 
     @Autowired
     private SpinService spinService;

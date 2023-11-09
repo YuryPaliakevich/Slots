@@ -1,7 +1,7 @@
 package by.slots.service.math.impl;
 
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_COLUMN_SIZE;
-import static by.slots.config.SlotsConfiguration.SLOTS_MATRIX_ROW_SIZE;
+import static by.slots.config.SlotsConfiguration.SLOTS_REELS_AMOUNT;
+import static by.slots.config.SlotsConfiguration.SLOTS_ROW_SIZE;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -20,7 +20,7 @@ public class SlotMatrixServiceImpl implements SlotMatrixService {
     @Autowired
     private SlotMatrixAnalyzerService analyzerService;
 
-    private volatile int[][] currentState = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+    private volatile int[][] currentState = new int[SLOTS_ROW_SIZE][SLOTS_REELS_AMOUNT];
 
     @Override
     public SlotMatrixGenerationResult generate() {
@@ -57,7 +57,7 @@ public class SlotMatrixServiceImpl implements SlotMatrixService {
     }
 
     private int[][] generateNewMatrix() {
-        int[][] matrix = new int[SLOTS_MATRIX_ROW_SIZE][SLOTS_MATRIX_COLUMN_SIZE];
+        int[][] matrix = new int[SLOTS_ROW_SIZE][SLOTS_REELS_AMOUNT];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 matrix[i][j] = generateRandom();
