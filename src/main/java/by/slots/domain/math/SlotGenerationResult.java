@@ -5,8 +5,8 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class SlotMatrixGenerationResult {
+public class SlotGenerationResult {
 
-    private int[][] matrix;
+    private int[] result;
 
 }

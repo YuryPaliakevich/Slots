@@ -24,7 +24,7 @@ public class SlotsConfiguration {
 
     public static final int SLOTS_ROW_SIZE = 5;
 
-    public static final int SLOTS_REELS_AMOUNT = 5;
+    public static final int SLOTS_REELS_AMOUNT = 25;
 
     @Bean
     public SlotsCompleteOverview slotsCompleteOverview() {

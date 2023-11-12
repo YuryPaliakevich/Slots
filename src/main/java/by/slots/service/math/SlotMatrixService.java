@@ -1,9 +1,9 @@
 package by.slots.service.math;
 
-import by.slots.domain.math.SlotMatrixGenerationResult;
+import by.slots.domain.math.SlotGenerationResult;
 
 public interface SlotMatrixService {
 
-    SlotMatrixGenerationResult generate();
+    SlotGenerationResult generate();
 
 }

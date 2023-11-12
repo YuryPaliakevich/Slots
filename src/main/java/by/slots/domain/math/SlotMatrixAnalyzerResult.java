@@ -8,7 +8,7 @@ import lombok.Getter;
 public class SlotMatrixAnalyzerResult {
 
     // Matrix which is consisted of 0 and 1 to point where winning combination occurred
-    private int[][] winningCombination;
+    private int[] winningCombination;
 
     private double winingAmount;
 

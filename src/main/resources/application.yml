@@ -1,5 +1,6 @@
 slots:
   reels:
+    #1
     - distribution:
         - amount-of-stops: 100
           type: LEMON
@@ -15,6 +16,7 @@ slots:
           type: WATERMELON
         - amount-of-stops: 30
           type: CHERRY
+    #2
     - distribution:
         - amount-of-stops: 120
           type: LEMON
@@ -30,6 +32,7 @@ slots:
           type: WATERMELON
         - amount-of-stops: 10
           type: CHERRY
+    #3
     - distribution:
         - amount-of-stops: 120
           type: LEMON
@@ -45,6 +48,7 @@ slots:
           type: WATERMELON
         - amount-of-stops: 10
           type: CHERRY
+    #4
     - distribution:
         - amount-of-stops: 120
           type: LEMON
@@ -60,6 +64,327 @@ slots:
           type: WATERMELON
         - amount-of-stops: 10
           type: CHERRY
+    #5
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #6
+    - distribution:
+        - amount-of-stops: 100
+          type: LEMON
+        - amount-of-stops: 90
+          type: ORANGE
+        - amount-of-stops: 80
+          type: PLUM
+        - amount-of-stops: 70
+          type: BANANA
+        - amount-of-stops: 60
+          type: MELON
+        - amount-of-stops: 50
+          type: WATERMELON
+        - amount-of-stops: 30
+          type: CHERRY
+    #7
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #8
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #9
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #10
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #11
+    - distribution:
+        - amount-of-stops: 100
+          type: LEMON
+        - amount-of-stops: 90
+          type: ORANGE
+        - amount-of-stops: 80
+          type: PLUM
+        - amount-of-stops: 70
+          type: BANANA
+        - amount-of-stops: 60
+          type: MELON
+        - amount-of-stops: 50
+          type: WATERMELON
+        - amount-of-stops: 30
+          type: CHERRY
+    #12
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #13
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #14
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #15
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #16
+    - distribution:
+        - amount-of-stops: 100
+          type: LEMON
+        - amount-of-stops: 90
+          type: ORANGE
+        - amount-of-stops: 80
+          type: PLUM
+        - amount-of-stops: 70
+          type: BANANA
+        - amount-of-stops: 60
+          type: MELON
+        - amount-of-stops: 50
+          type: WATERMELON
+        - amount-of-stops: 30
+          type: CHERRY
+    #17
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #18
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #19
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #20
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #21
+    - distribution:
+        - amount-of-stops: 100
+          type: LEMON
+        - amount-of-stops: 90
+          type: ORANGE
+        - amount-of-stops: 80
+          type: PLUM
+        - amount-of-stops: 70
+          type: BANANA
+        - amount-of-stops: 60
+          type: MELON
+        - amount-of-stops: 50
+          type: WATERMELON
+        - amount-of-stops: 30
+          type: CHERRY
+    #22
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #23
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #24
+    - distribution:
+        - amount-of-stops: 120
+          type: LEMON
+        - amount-of-stops: 70
+          type: ORANGE
+        - amount-of-stops: 50
+          type: PLUM
+        - amount-of-stops: 48
+          type: BANANA
+        - amount-of-stops: 44
+          type: MELON
+        - amount-of-stops: 25
+          type: WATERMELON
+        - amount-of-stops: 10
+          type: CHERRY
+    #25
     - distribution:
         - amount-of-stops: 120
           type: LEMON

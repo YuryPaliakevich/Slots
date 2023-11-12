@@ -4,8 +4,8 @@ import by.slots.domain.math.SlotMatrixAnalyzerResult;
 
 public interface SlotMatrixAnalyzerService {
 
-    SlotMatrixAnalyzerResult analyzeWinningCombinations(int[][] matrix);
+    SlotMatrixAnalyzerResult analyzeWinningCombinations(int[] matrix);
 
-    int[][] getCurrentWinningState();
+    int[] getCurrentWinningState();
 
 }
