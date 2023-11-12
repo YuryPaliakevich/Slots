@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class SlotDistributionDescription {
 
-    private int amountOfStops;
+    private long amountOfStops;
     private SlotType type;
 
 }

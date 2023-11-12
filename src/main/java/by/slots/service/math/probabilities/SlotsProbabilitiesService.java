@@ -2,10 +2,10 @@ package by.slots.service.math.probabilities;
 
 import java.util.List;
 
-import by.slots.domain.math.probabilities.SingleCombinationProbabilitiesResult;
+import by.slots.domain.math.probabilities.SingleCombinationProbabilitiesPerReelResult;
 
 public interface SlotsProbabilitiesService {
 
-    List<SingleCombinationProbabilitiesResult> getResults();
+    List<SingleCombinationProbabilitiesPerReelResult> getResults();
 
 }
