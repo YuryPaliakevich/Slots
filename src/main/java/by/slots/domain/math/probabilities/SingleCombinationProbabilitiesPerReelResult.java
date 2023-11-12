@@ -1,20 +1,19 @@
 package by.slots.domain.math.probabilities;
 
 import java.math.BigInteger;
-import java.util.List;
 
+import by.slots.domain.slot.SlotType;
 import lombok.Data;
 
 @Data
 public class SingleCombinationProbabilitiesPerReelResult {
 
-    private String combinationName;
+    private SlotType slotType;
+    private int numberOfOccurrences;
     private int hits;
     private double payment;
     private double probability;
     private double totalPayments;
-
-    private BigInteger cycle;
-    private List<Long> s_metric;
+    private BigInteger amountOfPossibleCombinations;
 
 }

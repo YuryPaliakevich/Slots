@@ -1,11 +1,9 @@
 package by.slots.service.math.probabilities;
 
-import java.util.List;
-
-import by.slots.domain.math.probabilities.SingleCombinationProbabilitiesPerReelResult;
+import by.slots.domain.math.probabilities.ProbabilitiesCalculationResult;
 
 public interface SlotsProbabilitiesService {
 
-    List<SingleCombinationProbabilitiesPerReelResult> getResults();
+    ProbabilitiesCalculationResult getResults();
 
 }
